@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:;">
+                    <a href="javascript:;" class="category">
                         <i class="glyphicon glyphicon-list"></i>
                         <span>分类管理</span>
                     </a>
@@ -72,12 +72,36 @@
     </div>
 
 
+    <!-- 模态框 -->
+    <div class="modal fade" id="logoutModal" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+                </div>
+                <div class="modal-body">
+                    <p style="color: #A94442">
+                        <i class="glyphicon glyphicon-info-sign"></i>
+                        <span>您确定要退出后台管理系统吗？</span>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary logoutBtn">退出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="./lib/jquery/jquery.js"></script>
     <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/isLogin.js"></script>
 
 </body>
 

@@ -28,3 +28,38 @@ $(document).ajaxStop(function () {
         NProgress.done()
     },1000)
 })
+
+$(function () {  
+    // 1.左侧二级菜单切换
+    $('.category').on('click',function () {  
+        $(this).next().stop().slideToggle()
+    })
+
+    // 2.左侧侧边栏切换
+    $('.icon-left').on('click',function () {  
+        $('.lt_aside').toggleClass('hidemenu')
+        $('.lt_toolbar').toggleClass('hidemenu')
+        $('.lt_main').toggleClass('hidemenu')
+    })
+
+    // 3.退出登录功能
+    $('.icon-right').on('click',function () {  
+        $('#logoutModal').modal('show')
+    })
+
+    // 点击模态框汇中的退出按钮
+    $('.logoutBtn').on('click',function () {  
+        // 发送ajax请求
+        $.ajax({
+            url: '/employee/employeeLogout',
+            type: 'get',
+            dataType: 'json',
+            success: function (info) {  
+                // console.log(info);
+                if(info.success) {
+                    location.href = 'login.html'
+                }
+            }
+        })
+    })
+})
