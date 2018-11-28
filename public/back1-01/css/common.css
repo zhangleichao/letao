@@ -135,3 +135,10 @@ ul,ol {
 .lt_main.hidemenu {
     padding-left: 0;
 }
+
+.lt_content .echarts-left,
+.lt_content .echarts-right {
+    width: 48%;
+    height: 400px;
+    background-color: lime;
+}
