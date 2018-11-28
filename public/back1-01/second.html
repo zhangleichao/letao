@@ -36,9 +36,9 @@
                         <i class="glyphicon glyphicon-list"></i>
                         <span>分类管理</span>
                     </a>
-                    <div class="child">
+                    <div class="child" style="display:block">
                         <a href="first.html">一级分类</a>
-                        <a href="second.html">二级分类</a>
+                        <a href="second.html" class="active">二级分类</a>
                     </div>
                 </li>
                 <li>
@@ -65,15 +65,9 @@
             <!-- 面包屑导航 -->
             <ol class="breadcrumb mt_20">
                 <li><a href="index.html">管理系统</a></li>
-                <li class="active">首页</li>
+                <li><a href="#">分类管理</a></li>
+                <li class="active">二级分类</li>
             </ol>
-
-            <!-- 准备一个具备宽高的容器 -->
-            <div class="lt_content">
-                <div class="echarts-left pull-left"></div>
-                <div class="echarts-right pull-right"></div>
-            </div>
-
 
         </div>
     </div>
@@ -107,10 +101,8 @@
     <script src="./lib/bootstrap/js/bootstrap.js"></script>
     <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
-    <script src="./lib/echarts/echarts.min.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/isLogin.js"></script>
-    <script src="./js/index.js"></script>
 
 </body>
 
