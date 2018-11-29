@@ -31,7 +31,7 @@ $(function() {
 
 
         // 配置分页
-        $('#paginator').bootstrapPaginator({
+        $('#paginator').bootstrapPaginator({    
           // 指定bootstrap版本
           bootstrapMajorVersion: 3,
           // 当前页
