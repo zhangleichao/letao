@@ -145,6 +145,12 @@ $(function () {
                     $('#addModal').modal('hide')
                     // 重新渲染
                     render()
+
+                    // 重置表单
+                    $('#form').data('bootstrapValidator').resetForm(true)
+                    // 需手动设置下拉框和图片的初始状态
+                    $('.dropdownTxt').text('请选择一级分类')
+                    $('#imgBox img').attr('src','./images/none.png')
                 }
             }
         })
