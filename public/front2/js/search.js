@@ -12,7 +12,6 @@ $(function() {
     localStorage.setItem( 'search_list', jsonStr );
   */
 
-
   // 功能分析
   // 1. 获取所有搜索历史, 完成渲染
   // 2. 删除单个搜索历史
